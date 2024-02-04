@@ -1,8 +1,8 @@
 # N1-OpenWrt
 
-Phicomm N1 with Lean's LEDE and Flippy's Packit
+Phicomm N1 with [Lean's LEDE](https://github.com/coolsnowwolf/lede) and [Flippy's Packit](https://github.com/unifreq/openwrt_packit)
 
-Add small-package feed source
+Append [small-package](https://github.com/kenzok8/small-package) feed source
 
 ## Software
 
@@ -64,7 +64,7 @@ Kernel modules -> Wireless Drivers -> kmod-brcmfmac(SDIO)
                                    -> kmod-brcmutil
                                    -> kmod-cfg80211
                                    -> kmod-mac80211
-                                   
+
 Network -> WirelessAPD   -> hostapd-common
                          -> wpa-cli
                          -> wpad-basic
