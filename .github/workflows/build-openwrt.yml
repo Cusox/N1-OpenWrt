@@ -75,7 +75,7 @@ jobs:
         with:
           ccache: true
           mixkey: ${{ env.BOARD }}
-          prefix: ${GITHUB_WORKSPACE}/openwrt
+          prefix: ${{ github.workspace }}/openwrt
 
       - name: Load Custom Feeds
         run: |
