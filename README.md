@@ -7,8 +7,15 @@ Append [small-package](https://github.com/kenzok8/small-package) feed source
 ## Software
 
 - Adguard Home
+- Amlogic
+- Auto Reboot
+- Diskman
+- File Transfer
 - MosDNS
 - OpenClash
+- Tailscale
+- Wol Plus
+- Zerotier
 
 ## Required OpenWrt Options
 
@@ -44,7 +51,7 @@ Network -> File Transfer -> curl、wget-ssl
 
 Utilities -> Compression -> bsdtar、pigz
           -> Disc -> blkid、fdisk、lsblk、parted
-          -> Editors -> nano、vim
+          -> Editors -> vim
           -> Filesystem -> attr、btrfs-progs(Build with zstd support)、chattr、dosfstools、
                            e2fsprogs、f2fs-tools、f2fsck、lsattr、mkf2fs、xfs-fsck、xfs-mkfs
           -> Shells -> bash
