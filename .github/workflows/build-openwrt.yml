@@ -125,7 +125,7 @@ jobs:
           cp -f .config output/config
           rm -rf $(ls . | grep -v "^output$" | xargs) 2>/dev/null
 
-          cd openwrt/output/
+          cd output/
           for file in *; do [[ ! -d "${file}" ]] && sha256sum "${file}" > "${file}.sha"; down
 
           df -hT ${PWD}
