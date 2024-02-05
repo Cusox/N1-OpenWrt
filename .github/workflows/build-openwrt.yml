@@ -123,7 +123,7 @@ jobs:
           mkdir output
           cp -f bin/targets/*/*/*rootfs.tar.gz output/
           cp -f .config output/config
-          rm -rf $(ls . | grep -v "^output$" | xargs) 2>/dev/null
+          rm -rf $(ls . | grep -v "^(output/tools/toolchain)$" | xargs) 2>/dev/null
 
           cd output/
           for file in *; do [[ ! -d "${file}" ]] && sha256sum "${file}" > "${file}.sha"; done
