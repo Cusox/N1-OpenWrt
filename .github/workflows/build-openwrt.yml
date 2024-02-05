@@ -22,7 +22,7 @@ env:
   REPO_BRANCH: master
   TAGS_NAME: lede
   STORAGE: save
-  BOARD: s90d
+  BOARD: s905d
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -144,6 +144,7 @@ jobs:
 
       - name: Package OpenWrt
         uses: unifreq/openwrt_packit@master
+        if: ${{ steps.clean.outputs.status }} == 'success' && !cancelled()
         env:
           OPENWRT_ARMVIRT: openwrt/output/*rootfs.tar.gz
           KERNEL_VERSION_NAME: ${{ inputs.openwrt_kernel }}
