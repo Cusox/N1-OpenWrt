@@ -126,7 +126,7 @@ jobs:
           rm -rf $(ls . | grep -v "^output$" | xargs) 2>/dev/null
 
           cd output/
-          for file in *; do [[ ! -d "${file}" ]] && sha256sum "${file}" > "${file}.sha"; down
+          for file in *; do [[ ! -d "${file}" ]] && sha256sum "${file}" > "${file}.sha"; done
 
           df -hT ${PWD}
           echo "status=success" >> ${GITHUB_OUTPUT}
