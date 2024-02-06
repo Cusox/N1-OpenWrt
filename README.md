@@ -78,6 +78,9 @@ Network -> WirelessAPD   -> hostapd-common
         -> iw                 
 ```
 
+## Tips
+The packaged OpenWrt doesn't provide DHCP functionality in dnsmasq-full. So, if you encounter a dnsmasq startup failure, simply comment out all lines in the `/usr/share/dnsmasq/dhcpbogushostname.conf` file
+
 ## License
 
 [MIT](https://github.com/lsilencej/N1-OpenWrt/blob/main/LICENSE) © [**lsilencej**](https://blog.lsilencej.com)
